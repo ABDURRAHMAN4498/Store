@@ -8,7 +8,7 @@ namespace StoreApp.Infrastructe.Extensions
             return request.QueryString.HasValue
             //içeriyorsa endpoint ile birleştir 
             ? $"{request.Path}{request.QueryString}"
-            //içermiyorsa olduğu gibi geri dönder
+            //içermiyor isa olduğu gibi geri dönder
             :request.Path.ToString();
         }
     }
